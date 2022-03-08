@@ -5,7 +5,7 @@ from sklearn.datasets import load_iris
 from abc import abstractmethod
 import random
 
-from clark_dash.utils import build_options, return_width_height
+from clark_py.dash.utils import build_options, return_width_height
 
 import plotly.express as px
 from plotly.subplots import make_subplots
@@ -13,12 +13,10 @@ from plotly.offline import plot
 
 import dash
 import dash_daq as daq
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import dcc
+from dash import html
 import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output, State
-
-
 
 
 class DashDataExplorer(object):
